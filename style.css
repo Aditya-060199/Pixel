@@ -27,3 +27,88 @@ html{
     margin-left: 2.5rem;
   }
 }
+.jumbotron{
+  background-image: url("images/frontsection1.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+}
+.jumbotroncontainer{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.jumbotrontitle{
+  font-weight: bolder;
+}
+.jumbotronparagraph{
+  margin-left: 0.1em;
+  margin-bottom: 1.5em;
+}
+@media (min-width: 768px) {
+  .jumbotrontitle{
+    margin-left: 9.8rem;
+}
+  .jumbotronparagraph{
+    margin-left: 10rem;
+  }
+  .searchbox{
+    margin-left: 9.8rem;
+  }
+}
+@media (max-width: 768px) {
+  .jumbotron{
+    text-align: center;
+  }
+}
+.searchbar{
+  border: 0em;
+  border-radius: 0.2rem;
+  margin-left: 0.3rem;
+  width: 65%;
+  height: 2.5rem;
+  margin-right: 2rem;
+  padding-left: 1rem;
+}
+.searchbtn{
+  margin-top: 0.2rem;
+  margin-bottom: 0.5rem;
+  padding: 0.3rem 1rem;
+  background-color: #ffffff;
+  color: #000000;
+  border: 0em;
+}
+@media (max-width: 768px){
+  .searchbar{
+    text-align: center;
+    display: block;
+    font-size: 1em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .searchbtn{
+    text-align: center;
+    margin-top: 1rem;
+  }
+}
+.searchicon{
+  margin-right: 0.4em
+}
+
+/* FOOTER*/
+
+footer{
+  background-color: #f2f2f2;
+  margin-top: 5rem;
+}
+.socialbtns{
+  text-align: center;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+.icon1{
+  padding: 2rem;
+  height: 1rem;
+}
+.icon2,.icon3,.icon4{
+  padding: 2rem;
+}
