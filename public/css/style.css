@@ -1,0 +1,142 @@
+html{
+  font-size: 16px;
+}
+
+/* NAVBAR */
+
+.mainnav{
+ padding: 1rem 4rem;
+ z-index: 1;
+}
+.loginbtn{
+  margin-right: 1rem;
+}
+.navbrand{
+  color: #000000;
+  font-weight: bold;
+  font-size: 2em;
+  font-family: Tahoma, Geneva, sans-serif;
+}
+.icon{
+  margin-right: 0.4em;
+}
+#home{
+  margin-left: 2.5rem;
+}
+#about,#explore{
+  margin-left: 2rem;
+}
+@media (max-width: 992px){
+  #home,#about,#explore,.loginbtn{
+    margin-left: 2.5rem;
+  }
+}
+
+/* JUMBOTRON AND SEARCHBAR */
+
+.jumbotron{
+  background-image: url("../images/frontsection.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  z-index: 0;
+}
+.jumbotroncontainer{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.jumbotrontitle{
+  font-weight: bolder;
+}
+.jumbotronparagraph{
+  margin-left: 0.1em;
+  margin-bottom: 1.5em;
+}
+@media (min-width: 768px) {
+  .jumbotrontitle{
+    margin-left: 9.8rem;
+}
+  .jumbotronparagraph{
+    margin-left: 10rem;
+  }
+  .searchbox{
+    margin-left: 9.8rem;
+  }
+}
+@media (max-width: 768px) {
+  .jumbotron{
+    text-align: center;
+  }
+}
+.searchbar{
+  border: 0em;
+  border-radius: 0.2rem;
+  margin-left: 0.3rem;
+  width: 65%;
+  height: 2.5rem;
+  margin-right: 2rem;
+  padding-left: 1rem;
+}
+.searchbtn{
+  margin-top: 0.2rem;
+  margin-bottom: 0.5rem;
+  padding: 0.3rem 1rem;
+  background-color: #ffffff;
+  color: #000000;
+  border: 0em;
+}
+@media (max-width: 768px){
+  .searchbar{
+    text-align: center;
+    display: block;
+    font-size: 1em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .searchbtn{
+    text-align: center;
+    margin-top: 1rem;
+  }
+}
+
+/* FOOTER*/
+
+footer{
+  background-color: #cccccc;
+  margin-top: 5rem;
+}
+.socialbtns{
+  text-align: center;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+.icon1,.icon2,.icon3,.icon4{
+  padding: 2rem;
+}
+
+/* HOME IMAGE SECTION */
+
+.image1,.image2,.image3,.image4{
+  width: 100%;
+  height: 15rem;
+  margin-top: 1rem;
+  -webkit-box-shadow: 0.3em 0.4em 0.5em #ccc;
+  -moz-box-shadow: 0.3em 0.4em 0.5em #ccc;
+  box-shadow: 0.3em 0.4em 0.5em #ccc;
+  object-fit: cover;
+  object-position: center;
+  transition: all 0.5s ease-in-out;
+  z-index: 1;
+}
+.image1:hover {
+  transform: scale(1.1);
+}
+.image2:hover {
+  transform: scale(1.1);
+}
+.image3:hover {
+  transform: scale(1.1);
+}
+.image4:hover {
+  transform: scale(1.1);
+}
