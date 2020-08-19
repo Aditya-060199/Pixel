@@ -1,0 +1,57 @@
+<%- include ("./partials/header") %>
+<div class="postbody">
+<div id="posticon">
+<label><h3><span class="fa fa-edit"></span></h3></label>
+</div>
+<div class = "postimage">
+<form action="/images" method="POST">
+    <div id = "uploadimage">
+    <label>Upload Image</label><br />
+    <input type="file" placeholder="Choose from device" accept="image/*"><br />
+    </div>
+    <div id="category">
+    <div id = "part1">
+    <label>Create Image Category</label><br/>
+    <input type = "text" placeholder = "Type here">
+    </div>
+    <div id="or">OR</div>
+    <div id = "part2">
+    <label>Choose Image Category</label><br/>
+    <select name="imagecategories" size="1">
+    <option value="" disabled selected id="initial">Pick a category</option>
+    <option value="Animal">Animal</option>
+    <option value="Art & Culture">Art & Culture</option>
+    <option value="Nature">Background</option>
+    <option value="Current Events">Current Events</option>
+    <option value="Fashion">Fashion</option>
+    <option value="Festival">Festival</option>
+    <option value="Food & Drinks">Food & Drinks</option>
+    <option value="Health & Wellness">Health & Wellness</option>
+    <option value="History">History</option>
+    <option value="Interiors">Interiors</option>
+    <option value="Nature">Nature</option>
+    <option value="Photography">Photography</option>
+    <option value="People">People</option>
+    <option value="Spirituality">Spirituality</option>
+    <option value="Technology">Technology</option>
+    <option value="Textures & Patterns">Textures & Patterns</option>
+    <option value="Travel">Travel</option>
+    <option value="Wallpaper">Wallpaper</option>
+    </select>
+    </div>
+    </div>
+    <div id = "imagetitle">
+    <label>Image Title</label><br />
+    <input type="type" placeholder="Write title here"><br />
+    </div>
+    <div id = "imagedescription">
+    <label>Image Description</label><br />
+    <textarea placeholder="Share something!" rows="4" cols="25"></textarea><br />
+    </div>
+    <div id = "postbtn">
+    <button type="submit" class="btn btn-primary">Post</button>
+    </div>
+</form>
+</div>
+</div>
+<%- include ("./partials/footer") %>

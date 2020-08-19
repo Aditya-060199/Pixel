@@ -1,21 +1,38 @@
-html{
-  font-size: 16px;
+html,body
+{
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
 }
 
 /* NAVBAR */
-
 .mainnav{
  padding: 1rem 4rem;
  z-index: 1;
 }
+.submitbtn{
+  margin-left: 2.5rem;
+}
 .loginbtn{
-  margin-right: 1rem;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+}
+.loginbtn a{
+  text-decoration: none;
+  color: #000000;
+}
+.submitbtn a{
+  text-decoration: none;
+  color: #ffffff;
 }
 .navbrand{
   color: #000000;
   font-weight: bold;
   font-size: 2em;
-  font-family: Tahoma, Geneva, sans-serif;
+  font-family: 'Merriweather', serif;
 }
 .icon{
   margin-right: 0.4em;
@@ -33,7 +50,6 @@ html{
 }
 
 /* JUMBOTRON AND SEARCHBAR */
-
 .jumbotron{
   background-image: url("../images/frontsection.jpg");
   background-size: cover;
@@ -47,6 +63,7 @@ html{
 }
 .jumbotrontitle{
   font-weight: bolder;
+  font-family: 'Merriweather', serif;
 }
 .jumbotronparagraph{
   margin-left: 0.1em;
@@ -80,30 +97,33 @@ html{
 .searchbtn{
   margin-top: 0.2rem;
   margin-bottom: 0.5rem;
-  padding: 0.3rem 1rem;
+  padding: 0.1rem 1rem;
   background-color: #ffffff;
   color: #000000;
   border: 0em;
+  margin-left: -5.6rem;
+}
+.searchbtn:hover{
+  background-color: #ffffff;
+  color: #000000;
 }
 @media (max-width: 768px){
   .searchbar{
-    text-align: center;
-    display: block;
+    text-align: left;
+    display: inline-block;
     font-size: 1em;
     margin-left: auto;
-    margin-right: auto;
   }
   .searchbtn{
     text-align: center;
-    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.1rem 1rem;
   }
 }
 
 /* FOOTER*/
-
 footer{
-  background-color: #cccccc;
-  margin-top: 5rem;
+  background-color: #f2f2f2;
 }
 .socialbtns{
   text-align: center;
@@ -113,10 +133,17 @@ footer{
 .icon1,.icon2,.icon3,.icon4{
   padding: 2rem;
 }
+.imagerow{
+  margin-bottom: 5rem;
+}
+@media (max-width: 768px){
+  .icon1,.icon2,.icon3,.icon4{
+    padding: 3rem 1rem;
+  }
+}
 
 /* HOME IMAGE SECTION */
-
-.image1,.image2,.image3,.image4{
+.image{
   width: 100%;
   height: 15rem;
   margin-top: 1rem;
@@ -128,15 +155,497 @@ footer{
   transition: all 0.5s ease-in-out;
   z-index: 1;
 }
-.image1:hover {
+.image:hover {
   transform: scale(1.1);
 }
-.image2:hover {
-  transform: scale(1.1);
+
+/*SIGNUP FORM SECTION*/
+.signupform{
+  padding: 3rem 3rem 4rem;
+  text-align: left;
+  margin: 3rem auto 5rem;
+  border: 0.1rem #f2f2f2 groove thick;
+  border-radius: 0.2rem;
+  width: 25rem;
+  background: #ffffff;
+  z-index: 1;
+  font-family: Tahoma, Geneva, sans-serif;
 }
-.image3:hover {
-  transform: scale(1.1);
+@media (min-width: 0px) and (max-width: 500px){
+  .signupform{
+    width: 100%;
+    padding: 2rem 2rem 3rem;
 }
-.image4:hover {
-  transform: scale(1.1);
+}
+#useremail,#userpassword{
+  margin-bottom: 1rem;
+}
+#useremail label, #userpassword label{
+  font-size: 1em;
+  font-weight: 500;
+  color: #4d4d4d;
+}
+.createbutton{
+  width: 100%;
+  display: block;
+  font-size: 1.1rem;
+  border-radius: 0.2rem;
+  border: none;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 1rem;
+  background: #00c6ff;
+  background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
+  background: linear-gradient(to right, #0072ff, #00c6ff);
+}
+.signupemail,.signuppassword{
+  border-radius: 0.2rem;
+  border-width: 0.1rem;
+  border-style: solid;
+  border: none;
+  background-color: #d9d9d9;
+  width: 100%;
+  border-color: #a6a6a6;
+  height: 2rem;
+}
+.signuppage{
+  background: url("../images/signup.jpg");
+  padding-top: 5rem;
+  padding-bottom: 7rem;
+  background-size: cover;
+  background-position: center;
+}
+@media (min-height: 1300px){
+  .signuppage{
+    padding-top: 6rem;
+    padding-bottom: 9rem;
+}
+}
+.fbbutton a, .googlebtn a{
+  text-decoration: none;
+  color: #ffffff;
+}
+.fbbutton,.googlebtn{
+  width: 100%;
+  display: block;
+  font-size: 1.1rem;
+  border-radius: 0.2rem;
+  border: none;
+  font-weight: 500;
+  text-align: center;
+  padding-left: 1rem;
+  background: linear-gradient(#4b6cb7,#182848);
+  color: #ffffff;
+}
+#facebookbtn, #googlebutton{
+  margin-bottom: 1.5rem;
+}
+.googlebtn{
+background: linear-gradient(#e73827, #dd2808);
+}
+.fa-facebook,.fa-google{
+  text-align: center;
+}
+#fb,#ge{
+  margin-left: 1em;
+  font-family: Tahoma, Geneva, sans-serif;
+  font-weight: 500;
+}
+.fbbutton:hover{
+  background: linear-gradient(#496ab6,#132039);
+}
+.googlebtn:hover{
+  background: linear-gradient(#e62a19, #c52407);
+}
+.hrule {
+   width: 100%;
+   text-align: center;
+   border-bottom: 0.05em solid #a6a6a6;
+   line-height: 0.05em;
+   margin: 0.5rem auto 1.5rem;
+}
+.hrule span {
+    background: #f2f2f2;
+    padding:0 10px;
+    font-size: 0.56em;
+    font-weight: normal;
+    font-family: Tahoma, Geneva, sans-serif;
+}
+.headingsignup{
+  font-weight: bolder;
+  font-family: 'Merriweather', serif;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+#headingpara{
+  text-align: center;
+  margin-bottom: 2.5rem;
+  margin-top: 1.5rem;
+  font-size: 1.3em;
+}
+#forgotpassword{
+  font-size: 0.8em;
+  text-align: center;
+}
+#forgotpassword a{
+  text-decoration: none;
+  color: #000000;
+}
+#haveaccount{
+  font-size: 0.9em;
+  text-align: center;
+}
+#haveaccount strong{
+  margin-left: 0.4em;
+  text-decoration: none;
+}
+#haveaccount a{
+  text-decoration: none;
+  color: #1a75ff;
+}
+.headingsignup .join{
+  margin-right: 0.5em;
+}
+.headingsignup .icon{
+  margin-right: 0.2em;
+}
+#signupicon{
+  border-radius: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  padding: 1rem 0.5rem 1rem 1rem;
+  background: #00c6ff;
+  background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
+  background: linear-gradient(to right, #0072ff, #00c6ff);
+  color: #ffffff;
+  width: 5rem;
+  height: 5rem;
+  margin-bottom: -5.2rem;
+}
+#signupicon span{
+  padding-top: 0.6rem;
+}
+
+/*LOGIN FORM SECTION*/
+.loginform{
+  padding: 3rem 3rem 4rem;
+  text-align: left;
+  margin: 3rem auto 5rem;
+  border: 0.1rem #f2f2f2 groove thick;
+  border-radius: 0.3rem;
+  width: 25rem;
+  background: #ffffff;
+  font-family: Tahoma, Geneva, sans-serif;
+}
+@media (min-width: 0px) and (max-width: 500px){
+  .loginform{
+    width: 100%;
+    padding: 2rem 2rem 3rem;
+}
+}
+#useremailorname,#userpassword{
+  margin-bottom: 1rem;
+}
+#useremailorname label, #userpassword label{
+  font-size: 1em;
+  font-weight: 500;
+  color: #4d4d4d;
+}
+.loginbutton{
+  width: 100%;
+  display: block;
+  font-size: 1.1rem;
+  border-radius: 0.2rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 1rem;
+  border: none;
+  background: linear-gradient(#2193b0, #6dd5ed);
+}
+.loginbutton:hover{
+  background: linear-gradient(#1d7e96,#49cbe9);
+}
+#circularicon{
+  border-radius: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  padding: 1rem 0.5rem 1rem 1rem;
+  background: linear-gradient(#2193b0, #6dd5ed);
+  color: #ffffff;
+  width: 5rem;
+  height: 5rem;
+  margin-bottom: -5.2rem;
+}
+.loginemailorname,.loginpassword{
+  border-radius: 0.2rem;
+  border-width: 0.1rem;
+  background-color: #d9d9d9;
+  border-style: solid;
+  border: none;
+  width: 100%;
+  border-color: #a6a6a6;
+  height: 2rem;
+}
+.loginpage{
+  background-image: url("../images/login.jpg");
+  padding-top: 5rem;
+  padding-bottom: 7rem;
+  background-size: cover;
+  background-position: center;
+}
+@media (min-height: 1300px){
+  .loginpage{
+    padding-top: 9rem;
+    padding-bottom: 11.5rem;
+}
+}
+.hrule {
+   width: 100%;
+   text-align: center;
+   border-bottom: 0.05em solid #a6a6a6;
+   line-height: 0.05em;
+   margin: 0.5rem auto 1.5rem;
+}
+.hrule span {
+    background: #ffffff;
+    padding:0 10px;
+    font-size: 0.56em;
+    font-weight: normal;
+    font-family: Tahoma, Geneva, sans-serif;
+}
+.headinglogin{
+  font-weight: bolder;
+  font-family: 'Merriweather', serif;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+#forgotpassword{
+  font-size: 0.8em;
+  text-align: center;
+}
+#forgotpassword a{
+  text-decoration: none;
+  color: #000000;
+}
+#donthaveaccount{
+  font-size: 0.9em;
+  text-align: center;
+}
+#donthaveaccount strong{
+  margin-left: 0.4em;
+  text-decoration: none;
+}
+#donthaveaccount a{
+  text-decoration: none;
+  color: #1a75ff;
+}
+.headinglogin .join{
+  margin-right: 0.5em;
+}
+.headinglogin .icon{
+  margin-right: 0.2em;
+}
+#logintext{
+  text-align: center;
+  margin-bottom: 2.5em;
+  margin-top: 1rem;
+  font-weight: normal;
+}
+#logintext h3{
+  font-weight: bolder;
+}
+#welcometext{
+  font-size: 1em;
+}
+#forgotpassword{
+  float: right;
+}
+#userpassword #forgotpassword{
+  font-size: 0.8em;
+  margin-bottom: 0em;
+  padding-top: 0.3em;
+}
+#userpassword #forgotpassword strong{
+  text-decoration: underline;
+}
+.fbbutton, .googlebtn, #signupicon, .createbutton, .signupform, .loginbutton, #circularicon, .loginform, #posticon, #postbtn .btn{
+  -webkit-box-shadow: 0.3em 0.4em 0.5em #333333;
+  -moz-box-shadow: 0.3em 0.4em 0.5em #333333;
+  box-shadow: 0.3em 0.4em 0.5em #333333;
+}
+
+/* POST IMAGE PAGE */
+.postimage{
+  text-align: left;
+  border: 0.1rem #f2f2f2 groove thick;
+  border-radius: 0.3em;
+  margin: 2rem 11rem 3rem 11rem;
+  background-color: #ffffff;
+}
+.postbody{
+  background-image: url("../images/trees.jpg");
+  padding-top: 5rem;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 7rem;
+}
+#uploadimage{
+  margin-top: 2rem;
+}
+.postimage textarea{
+  width: 100%;
+  resize: none;
+}
+#uploadimage{
+  padding: 4rem 2rem 1.5rem;
+}
+#imagetitle,#imagedescription,#category{
+  padding: 1rem 2rem 1.5rem;
+}
+#postbtn{
+  padding: 0rem 2rem 2rem;
+  text-align: center;
+}
+#postbtn .btn{
+  border-radius: 0.2em;
+  padding: 1rem 4rem 1rem;
+  font-size: 1.2rem;
+  background: linear-gradient(#02AAB0, #00CDAC);
+  border: none;
+}
+#postbtn .btn:hover{
+  background: linear-gradient(#029297, #00b395);
+}
+#imagetitle input{
+  border-radius: 0.3em;
+  border: none;
+  height: 2.5rem;
+  border-width: thin;
+  width: 100%;
+  background-color: #e6e6e6;
+}
+#imagedescription textarea{
+  border-radius: 0.3em;
+  border: none;
+  background-color: #e6e6e6;
+}
+@media (max-width: 768px){
+  .postimage{
+    margin: 2rem 3rem 3rem 3rem;
+  }
+}
+#posticon{
+  border-radius: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  margin-bottom: -4.5rem;
+  padding: 1.5rem 1.5rem;
+  background: linear-gradient(#02AAB0, #00CDAC);
+  width: 5rem;
+  height: 5rem;
+}
+#posticon span{
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 2rem;
+}
+@media (min-height: 1000px) and (max-height: 1150px){
+  .postbody{
+    padding-top: 3.3rem;
+    padding-bottom: 4.5rem;
+  }
+}
+@media (min-height: 1200px){
+  .postbody{
+    padding-top: 10rem;
+    padding-bottom: 14rem;
+  }
+  footer{
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+  }
+  .mainnav{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+}
+#imagecategories{
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+#part1,#part2{
+  display: inline-block;
+  width: 44%;
+}
+#part1 input, #part2 select{
+  width: 100%;
+  height: 2.5rem;
+  border-radius: 0.3em;
+  border: none;
+  background-color: #e6e6e6;
+}
+#category #or{
+  width: 10%;
+  text-align: center;
+  display: inline-block;
+}
+@media (min-width: 0px) and (max-width: 300px){
+  .postimage{
+    margin: 2rem 0.4rem 3rem 0.4rem;
+  }
+}
+@media (min-width: 301px) and (max-width: 360px){
+  .postimage{
+    margin: 2rem 1.5rem 3rem 1.5rem;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px){
+  #part1,#part2{
+    display: block;
+    width: 100%;
+  }
+  #category #or{
+    text-align: center;
+    display: block;
+    margin: 1rem auto 0.2rem;
+    font-weight: bold;
+  }
+}
+@media (min-width: 769px){
+  #part1,#part2{
+    display: inline-block;
+    width: 44%;
+  }
+  #category #or{
+    width: 10%;
+    text-align: center;
+    display: inline-block;
+  }
+  .postimage{
+    margin: 1rem 7rem 2rem 7rem;
+  }
+}
+@media (min-width: 992px){
+  #part1,#part2{
+    width: 44.35%;
+  }
+}
+@media (min-width: 1201px){
+  #part1,#part2{
+    width: 44.5%;
+  }
+}
+@media (min-width: 1276px){
+  #part1,#part2{
+    width: 44.55%;
+  }
 }

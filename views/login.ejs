@@ -1,0 +1,35 @@
+<%- include ("./partials/header") %>
+<div class = "loginpage">
+<div id = "circularicon">
+<h1 class = "headinglogin"><span class="fa fa-crop icon" aria-hidden="true"></span></h1>
+</div>
+<div class = "loginform">
+<div id="logintext">
+<h3>Login</h3>
+<span id="welcometext">Welcome back.</span>
+</div>
+<div id = "facebookbtn">
+<button class = "btn btn-lg fbbutton"><a href="/auth/facebook" class="fab fa-facebook"><span id = "fb">Login with <strong>Facebook</strong></span></a></button>
+</div>
+<div id = "googlebutton">
+<button class="btn btn-lg googlebtn"><a href="/auth/google" class="fab fa-google"><span id = "ge">Login with <strong>Google</strong></span></a></button>
+</div>
+<h2 class="hrule"><span><em>or</em></span></h2>
+<form action="/login" method="POST">
+<div id="useremailorname">
+<label>Email</label><br />
+<input type = "email" name = "username" class="loginemailorname" required><br />
+</div>
+<div id="userpassword">
+<label>Password</label>
+<label id = "forgotpassword">Forgot <a href="#"><strong>Password?</strong></a></label><br />
+<input type="password" name="password" class="loginpassword" required><br />
+</div>
+<button type="submit" class="btn btn-lg btn-primary loginbutton">Login</button>
+</form>
+<div id = "donthaveaccount">
+<label>Don't have an account?<strong><a href = "#">Sign Up</a></strong></label>
+</div>
+</div>
+</div>
+<%- include ("./partials/footer") %>
