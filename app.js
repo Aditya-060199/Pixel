@@ -108,6 +108,12 @@ app.route("/about")
   res.render("about");
 });
 
+//CONTACT US ROUTE
+app.route("/contactus")
+.get(function(req,res){
+    res.render("contactus");
+});
+
 //EXPLORE IMAGES AND POST IMAGES ROUTE
 app.route("/postimage")
 .get(function(req,res){
