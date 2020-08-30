@@ -124,6 +124,8 @@ html,body
 /* FOOTER*/
 footer{
   background-color: #f2f2f2;
+  position: relative;
+  z-index: 1;
 }
 .socialbtns{
   text-align: center;
@@ -686,16 +688,16 @@ background: linear-gradient(#e73827, #dd2808);
 
 /* CONTACT US PAGE */
 .contactuspage{
-  padding: 5rem;
+  padding: 10.6rem 5rem 15.5rem;
   text-align: center;
   background-image: linear-gradient(-90deg, rgb(0,0,0,0.4), rgb(0, 0, 0,0.4)),url("../images/contactusimage.jpg");/*linear-gradient(180deg, rgb(0, 102, 255,1), rgb(256,256,256,1)),*/
   background-position: center;
   background-size: cover;
 }
 .contactus{
-margin: 2rem auto 02rem;
+margin: 2rem auto 2rem;
 height: 35rem;
-width: 45rem;
+width: 65%;
 }
 .contactusimage h1{
   padding-top: 1rem;
@@ -805,4 +807,132 @@ background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #c
 background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
 background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+@media(min-width: 0px) and (max-width: 500px){
+  .contactus{
+  width: 100%;
+  height: 40rem;
+  }
+  .name, .emailid{
+    display: block;
+    width: 100%;
+  }
+  .contactuspage{  /* rewrite */
+    padding: 5rem 0rem;
+  }
+  .fb, .fi, .fl{
+    margin: 0.5rem 0.5rem 2rem;
+    padding: 1rem;
+  }
+}
+@media(min-width: 501px) and (max-width: 900px){
+  .contactuspage{
+    padding: 5rem 0rem;
+  }
+  .contactus{
+  width: 80%;
+  height: 40rem;
+  }
+  .name, .emailid{
+    display: block;
+    width: 100%;
+  }
+}
+
+/*ABOUT PAGE*/
+.aboutpage{
+  padding: 0rem;
+}
+.carouselimage1{
+  background-image: url("../images/carouselimage1.jpg");
+}
+.carouselimage2{
+  background-image: url("../images/carouselimage2.jpg");
+}
+.carouselimage3{
+  background-image: url("../images/carouselimage3.jpg");
+}
+.carouselimage4{
+  background-image: url("../images/carouselimage4.jpg");
+}
+.carouselimage1,.carouselimage2,.carouselimage3,.carouselimage4{
+  background-size: cover;
+  background-position: center;
+  height: 21rem;
+  width: 100%;
+  position: relative;
+  z-index: 0;
+}
+.carousel-item{
+  transition: transform 1.5s;
+}
+.aboutpagecontent{
+  padding: 0rem;
+  width: 100%;
+  height: 100;
+  position: relative;
+  z-index: 1;
+  background-image: linear-gradient(rgb(256,256,256,0.7), rgb(256,256,256,0.7)), url("../images/aboutpageimage.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.aboutpageoverlap{
+  background-image: linear-gradient(rgb(0,0,0,0.7), rgb(0,0,0,0.7));
+  text-align: center;
+}
+.description{
+  color: #ffffff;
+  font-family: 'Quattrocento', serif; /* rewrite */
+}
+.aboutpurpose,.teamtitle,.aboutteam{
+  color: #ffffff;
+}
+.aboutteam{
+  background: url("../images/me.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 11rem;
+  width: 11rem;
+  margin: 2.5rem auto 0rem;
+  border-radius: 100%;
+}
+.aboutpurpose{
+  padding-top: 5rem;
+  font-family: 'Gabriela', serif;
+}
+.description{
+  padding: 1rem 1rem 0rem;
+  margin-bottom: 5rem;
+}
+.description span{
+  padding-bottom: 1rem;
+}
+.horizontal{
+  width: 70%;
+  height: 0.1rem;
+  background-color: rgb(255, 78.7, 78.7);
+  border: 0;
+}
+.teamtitle{
+  padding-top: 3rem;
+  font-family: 'Gabriela', serif;
+}
+.teammember{
+  color: #ffffff;
+  padding: 2rem 0rem 3rem;
+}
+.teammember p{
+  font-family: 'Quattrocento', serif;
+}
+.teammember h4{
+  font-family: 'Gabriela', serif;
+}
+.gprofile,.lprofile{
+  padding: 0.5rem 1rem 0em;
+}
+@media(max-width: 500px){
+  .aboutpage{
+    color: #ffffff;
+    margin: 0rem;
+  }
 }
