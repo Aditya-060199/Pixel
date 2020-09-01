@@ -6,7 +6,7 @@
 <div class = "signupform">
 <div id = "headingpara">
 <div id = "usericon">
-<span class="fas fa-user-plus"></span><br />
+<span class="fas fa-crop"></span><br />
 </div>
 Join Pixel now and share your stories with others!
 </div>
@@ -19,11 +19,15 @@ Join Pixel now and share your stories with others!
 <h2 class="hrule"><span><em>or</em></span></h2>
 <form action="/signup" method="POST">
 <div id="useremail">
-<label><span class="fas fa-envelope fe"></span>Email</label><br />
+<label><span class="fas fa-envelope fenv"></span>Email</label>
 <input type = "email" name = "username" class="signupemail" required><br />
 </div>
-<div id="userpassword">
-<label><span class="fas fa-lock fl"></span>Password</label><br />
+<div id="signuppassword"> <!-- rewrite -->
+<label><span class="fas fa-lock flck"></span>Password</label>
+<input type="password" name="password" class="signuppassword" required><br />
+</div>
+<div id="cnfmpwd">
+<label><span class = "fas fa-unlock fcfm"></span>Confirm Password</label>
 <input type="password" name="password" class="signuppassword" required><br />
 </div>
 <button type="submit" class="btn btn-lg btn-primary createbutton">Create Account</button>

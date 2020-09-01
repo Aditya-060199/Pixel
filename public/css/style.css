@@ -167,7 +167,7 @@ footer{
   margin: 1.5rem auto 1.5rem;
   border: 0.1rem #f2f2f2 groove thick;
   width: 45rem;
-  height: 45rem;
+  height: 47rem;
   display: inline-block;
   background: #ffffff;
   z-index: 1;
@@ -202,13 +202,14 @@ footer{
   height: 100%;
 }
 }
-#useremail,#userpassword{
+#useremail,#signuppassword, #cnfmpwd{
   margin-bottom: 1rem;
 }
-#useremail label, #userpassword label{
+#useremail label, #signuppassword label, #cnfmpwd label{
   font-size: 1em;
   font-weight: 500;
   color: #4d4d4d;
+  margin-bottom: 0rem;
 }
 .createbutton{
   width: 100%;
@@ -242,11 +243,14 @@ footer{
 #useremail label{
   margin-top: 2rem;
 }
-.fe,.fl{
+.fenv,.flck,.fcfm{
   margin-right: 0.4rem;
 }
+.flck{
+  padding: 0rem;
+}
 .signuppage{
-  background-image: linear-gradient(to bottom, rgb(256,256,256,1), rgb(0, 219, 222,0)),url("../images/signupbackground.jpg");
+  background-image: linear-gradient(to bottom, rgb(84, 51, 255,1), rgb(32, 189, 255,0.5), rgb(165, 254, 203,0)),url("../images/signupbackground.jpg");
   padding-top: 5rem;
   padding-bottom: 7rem;
   background-size: cover;
@@ -259,11 +263,11 @@ footer{
     padding-bottom: 9rem;
 }
 }
-.fbbutton a, .googlebtn a{
+.fbbutton a, .googlebtn a, .fblogin a, .googlelogin a{
   text-decoration: none;
   color: #ffffff;
 }
-.fbbutton,.googlebtn{
+.fbbutton,.googlebtn, .fblogin, .googlelogin {
   width: 100%;
   display: block;
   font-size: 1.1rem;
@@ -278,7 +282,7 @@ footer{
 #facebookbtn, #googlebutton{
   margin-bottom: 1.5rem;
 }
-.googlebtn{
+.googlebtn,.googlelogin{
 background: linear-gradient(#e73827, #dd2808);
 }
 .fa-facebook,.fa-google{
@@ -289,10 +293,10 @@ background: linear-gradient(#e73827, #dd2808);
   font-family: Tahoma, Geneva, sans-serif;
   font-weight: 500;
 }
-.fbbutton:hover{
+.fbbutton:hover, .fblogin:hover{
   background: linear-gradient(#496ab6,#132039);
 }
-.googlebtn:hover{
+.googlebtn:hover, .googlelogin:hover{
   background: linear-gradient(#e62a19, #c52407);
 }
 .hrule {
@@ -300,10 +304,10 @@ background: linear-gradient(#e73827, #dd2808);
    text-align: center;
    border-bottom: 0.05em solid #a6a6a6;
    line-height: 0.05em;
-   margin: 0.5rem auto 3rem;
+   margin: 2rem auto 1.5rem;
 }
 .hrule span {
-    background: #f2f2f2;
+    background: #ffffff;
     padding:0 10px;
     font-size: 0.56em;
     font-weight: normal;
@@ -326,17 +330,9 @@ background: linear-gradient(#e73827, #dd2808);
   font-size: 2.5rem;
 }
 #headingpara #usericon{
-  border-radius: 100%;
-  background: #00c6ff;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 1.5rem;
-  background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
-  background: linear-gradient(to right, #0072ff, #00c6ff);
-  padding: 1rem 0.5rem 1rem 1rem;
-  width: 5rem;
-  height: 5rem;
-  color: #ffffff;
+  margin-bottom: 0rem;
 }
 #forgotpassword{
   font-size: 0.8em;
@@ -364,6 +360,37 @@ background: linear-gradient(#e73827, #dd2808);
 .headingsignup .icon{
   margin-right: 0.2em;
 }
+@media(min-width: 501px) and (max-width: 738px){
+  .signup-form{
+    text-align: left;
+    margin: 1.5rem auto 1.5rem;
+    border: 0.1rem #f2f2f2 groove thick;
+    width: 100%;
+    height: 47rem;
+    display: inline-block;
+    background: #ffffff;
+    z-index: 1;
+    font-family: Tahoma, Geneva, sans-serif;
+  }
+  .signupform{
+    padding: 3rem 1rem 4rem;
+  }
+}
+@media(min-width: 549px) and (max-width: 738px){
+  .signupform{
+    padding: 3rem 2rem 4rem;
+  }
+}
+@media(max-width: 300px){
+  .signupform{
+    padding: 2rem 1rem 3rem;
+  }
+}
+@media (min-width: 301px) and (max-width: 500px){
+  .signupform{
+      padding: 2rem 2rem 3rem;
+  }
+}
 
 /*LOGIN FORM SECTION*/
 .loginform{
@@ -373,22 +400,20 @@ background: linear-gradient(#e73827, #dd2808);
   border: 0.1rem #f2f2f2 groove thick;
   border-radius: 0.3rem;
   width: 25rem;
-  background: #ffffff;
+  background: rgba(0,0,0,0.6);
   font-family: Tahoma, Geneva, sans-serif;
 }
-@media (min-width: 0px) and (max-width: 500px){
-  .loginform{
-    width: 100%;
-    padding: 2rem 2rem 3rem;
-}
-}
-#useremailorname,#userpassword{
+#useremailorname,#loginpassword{
   margin-bottom: 1rem;
 }
-#useremailorname label, #userpassword label{
+#useremailorname label, #loginpassword label{
   font-size: 1em;
   font-weight: 500;
-  color: #4d4d4d;
+  color: #ffffff;
+  margin-bottom: 0rem;
+}
+#useremailorname label{
+  margin-top: 1.5rem;
 }
 .loginbutton{
   width: 100%;
@@ -420,13 +445,20 @@ background: linear-gradient(#e73827, #dd2808);
 }
 .loginemailorname,.loginpassword{
   border-radius: 0.2rem;
-  border-width: 0.1rem;
-  background-color: #d9d9d9;
+  border-width: 0.02rem;
   border-style: solid;
-  border: none;
+  font-size: 0.9rem;
   width: 100%;
-  border-color: #a6a6a6;
-  height: 2rem;
+  background: rgba(0,0,0,0);
+  border-color: #ffffff;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom-left-radius: 0rem;
+  border-bottom-right-radius: 0rem;
+  color: #ffffff;
+  height: 1.5rem;
+  outline: none;
 }
 .loginpage{
   background-image: url("../images/login.jpg");
@@ -441,19 +473,35 @@ background: linear-gradient(#e73827, #dd2808);
     padding-bottom: 11.5rem;
 }
 }
-.hrule {
-   width: 100%;
-   text-align: center;
-   border-bottom: 0.05em solid #a6a6a6;
-   line-height: 0.05em;
-   margin: 0.5rem auto 1.5rem;
+.hrcontn{
+  text-align: left;
+  display: inline-block;
+  width: 44.7%;
+  margin: 0rem;
 }
-.hrule span {
-    background: #ffffff;
-    padding:0 10px;
-    font-size: 0.56em;
-    font-weight: normal;
-    font-family: Tahoma, Geneva, sans-serif;
+.hrcontn hr{
+  width: 100%;
+  background-color: #ffffff;
+}
+.hrlogin{
+  display: inline-block;
+  text-align: center;
+  color: #ffffff;
+  height: 2.5rem;                 /* rewrite */
+  width: 7.3%;
+  vertical-align: middle;        /* rewrite */
+  font-size: 1rem;
+  margin: 0rem;
+}
+.hrpart{
+  text-align: left;
+  display: inline-block;
+  width: 44.7%;
+  margin: 0rem;
+}
+.hrpart hr{
+  width: 100%;
+  background-color: #ffffff;
 }
 .headinglogin{
   font-weight: bolder;
@@ -467,11 +515,12 @@ background: linear-gradient(#e73827, #dd2808);
 }
 #forgotpassword a{
   text-decoration: none;
-  color: #000000;
+  color: #1a75ff;
 }
 #donthaveaccount{
   font-size: 0.9em;
   text-align: center;
+  color: #ffffff;
 }
 #donthaveaccount strong{
   margin-left: 0.4em;
@@ -492,6 +541,7 @@ background: linear-gradient(#e73827, #dd2808);
   margin-bottom: 2.5em;
   margin-top: 1rem;
   font-weight: normal;
+  color: #ffffff;
 }
 #logintext h3{
   font-weight: bolder;
@@ -510,10 +560,88 @@ background: linear-gradient(#e73827, #dd2808);
 #userpassword #forgotpassword strong{
   text-decoration: underline;
 }
-.fbbutton,#usericon, .googlebtn, #signupicon, .createbutton, .signup-form, .loginbutton, #circularicon, .loginform, #posticon, #postbtn .btn{
+.fbbutton, .googlebtn, .createbutton, #posticon, #postbtn .btn{
   -webkit-box-shadow: 0.3em 0.4em 0.5em #333333;
   -moz-box-shadow: 0.3em 0.4em 0.5em #333333;
   box-shadow: 0.3em 0.4em 0.5em #333333;
+}
+@media(max-width: 300px){
+  .loginform{
+    width: 100%;
+    padding: 2rem 1rem 3rem;
+}
+.hrcontn{
+  width: 44.7%;
+}
+.hrlogin{
+  width: 6.54%;
+}
+.hrpart{
+  width: 44.7%;
+}
+}
+@media(min-width: 301px) and (max-width: 500px){
+.loginform{
+    width: 100%;
+    padding: 2rem 2rem 3rem;
+}
+.hrcontn{
+  width: 44.7%;
+}
+.hrlogin{
+  width: 8%;
+}
+.hrpart{
+  width: 44.7%;
+}
+}
+@media(min-width: 301px) and (max-width: 359px){
+.hrcontn{
+  width: 43.4%;
+}
+.hrlogin{
+  width: 8.7%;
+}
+.hrpart{
+  width: 43.8%;
+}
+}
+@media(min-width: 375px) and (max-width: 400px){
+.hrcontn{
+    width: 44.7%;
+}
+.hrlogin{
+    width: 7.4%;
+}
+.hrpart{
+    width: 44.7%;
+}
+}
+@media(min-width: 401px) and (max-width: 460px){
+.hrcontn{
+    width: 44.7%;
+}
+.hrlogin{
+    width: 7%;
+}
+.hrpart{
+    width: 44.7%;
+}
+}
+@media(min-width: 360px) and (max-width: 374px){
+  .loginform{
+    width: 100%;
+    padding: 2rem 2rem 3rem;
+}
+  .hrcontn{
+    width: 44.7%;
+  }
+  .hrlogin{
+    width: 7%;
+  }
+  .hrpart{
+    width: 44.7%;
+  }
 }
 
 /* POST IMAGE PAGE */
@@ -773,7 +901,7 @@ form .contents{
 .contactusbody .contactbutton{
   text-align: center;
 }
-.fa-envelope, .fa-comments, .fa-user{
+.fmail, .fcmnt, .fuser{
   font-size: 1.5rem;
 }
 .contactsocial{

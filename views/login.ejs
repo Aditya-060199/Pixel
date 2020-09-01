@@ -9,20 +9,26 @@
 <span id="welcometext">Welcome back.</span>
 </div>
 <div id = "facebookbtn">
-<button class = "btn btn-lg fbbutton"><a href="/auth/facebook" class="fab fa-facebook"><span id = "fb">Sign In with <strong>Facebook</strong></span></a></button>
+<button class = "btn btn-lg fblogin"><a href="/auth/facebook" class="fab fa-facebook"><span id = "fb">Login with <strong>Facebook</strong></span></a></button>
 </div>
 <div id = "googlebutton">
-<button class="btn btn-lg googlebtn"><a href="/auth/google" class="fab fa-google"><span id = "ge">Sign In with <strong>Google</strong></span></a></button>
+<button class="btn btn-lg googlelogin"><a href="/auth/google" class="fab fa-google"><span id = "ge">Login with <strong>Google</strong></span></a></button>
 </div>
-<h2 class="hrule"><span><em>or</em></span></h2>
+<div class = "hrcontn">
+<hr />
+</div>
+<h2 class="hrlogin"><em>or</em></h2>
+<div class = "hrpart">
+<hr />
+</div>
 <form action="/login" method="POST">
 <div id="useremailorname">
 <label>Email</label><br />
-<input type = "email" name = "username" class="loginemailorname" required><br />
+<input type = "email" name = "username" class="loginemailorname" required>
 </div>
-<div id="userpassword">
+<div id="loginpassword">
 <label>Password</label>
-<label id = "forgotpassword">Forgot <a href="#"><strong>Password?</strong></a></label><br />
+<label id = "forgotpassword">Forgot <a href="#"><strong>Password?</strong></a></label>
 <input type="password" name="password" class="loginpassword" required><br />
 </div>
 <button type="submit" class="btn btn-lg btn-primary loginbutton">Login</button>
