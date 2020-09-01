@@ -250,7 +250,7 @@ footer{
   padding: 0rem;
 }
 .signuppage{
-  background-image: linear-gradient(to bottom, rgb(84, 51, 255,1), rgb(32, 189, 255,0.5), rgb(165, 254, 203,0)),url("../images/signupbackground.jpg");
+  background-image: linear-gradient(to right, rgb(86, 204, 242,0.5) 48%, rgb(47, 128, 237, 0.1) 100%),url("../images/signupbackground.jpg");
   padding-top: 5rem;
   padding-bottom: 7rem;
   background-size: cover;
